@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6822A9E1294A72890033B166 /* PlacesSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9E0294A72890033B166 /* PlacesSearchViewModel.swift */; };
+		6822A9E3294A83D90033B166 /* PlacesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9E2294A83D90033B166 /* PlacesMapView.swift */; };
+		6822A9E5294A84C70033B166 /* PlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9E4294A84C70033B166 /* PlacesListView.swift */; };
+		6822A9E7294A8AA00033B166 /* PlacesViewModePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9E6294A8AA00033B166 /* PlacesViewModePickerView.swift */; };
+		6822A9F1294BDB450033B166 /* PlaceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9F0294BDAA30033B166 /* PlaceDetailViewModel.swift */; };
+		6822A9F3294BE3D10033B166 /* PlacePhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9F2294BE3D10033B166 /* PlacePhotosResponse.swift */; };
+		6822A9F5294BF1640033B166 /* PlacesSortTypePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6822A9F4294BF1640033B166 /* PlacesSortTypePickerView.swift */; };
+		68E981F529490BF600B5BBB6 /* AdyenAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E981F429490BF600B5BBB6 /* AdyenAssignmentApp.swift */; };
+		68E981F729490BF600B5BBB6 /* PlacesSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E981F629490BF600B5BBB6 /* PlacesSearchView.swift */; };
+		68E981F929490BF700B5BBB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68E981F829490BF700B5BBB6 /* Assets.xcassets */; };
+		68E981FC29490BF700B5BBB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68E981FB29490BF700B5BBB6 /* Preview Assets.xcassets */; };
+		68E9820629490BF700B5BBB6 /* AdyenAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9820529490BF700B5BBB6 /* AdyenAssignmentTests.swift */; };
+		68E9821029490BF700B5BBB6 /* AdyenAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9820F29490BF700B5BBB6 /* AdyenAssignmentUITests.swift */; };
+		68E9821229490BF700B5BBB6 /* AdyenAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9821129490BF700B5BBB6 /* AdyenAssignmentUITestsLaunchTests.swift */; };
+		68E9822129490C1300B5BBB6 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9821E29490C1300B5BBB6 /* PlaceDetailView.swift */; };
+		68E9822229490C1300B5BBB6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9821F29490C1300B5BBB6 /* Place.swift */; };
+		68E9822329490C1300B5BBB6 /* PlaceItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9822029490C1300B5BBB6 /* PlaceItemRowView.swift */; };
+		68E9822529490C2100B5BBB6 /* Example Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9822429490C2100B5BBB6 /* Example Data.swift */; };
+		68E9822829490CCF00B5BBB6 /* PlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E9822729490CCF00B5BBB6 /* PlacesResponse.swift */; };
+		68E9822A2949162700B5BBB6 /* PlacesDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E982292949162700B5BBB6 /* PlacesDataService.swift */; };
+		68F7C008294CF6300074CAAC /* DistanceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F7C007294CF6300074CAAC /* DistanceFormatter.swift */; };
+		68F7C00B294FD9D10074CAAC /* PlacesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F7C00A294FD9D10074CAAC /* PlacesCoordinator.swift */; };
+		68F7C00E2950A8AC0074CAAC /* PlacesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F7C00D2950A8AC0074CAAC /* PlacesScene.swift */; };
+		68FC5D342950CA7400B4F6CA /* PlacesNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC5D332950CA7400B4F6CA /* PlacesNetworkRepository.swift */; };
+		68FC5D372950CFFC00B4F6CA /* MKCoordinateRegion+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC5D362950CFFC00B4F6CA /* MKCoordinateRegion+Radius.swift */; };
+		68FC5D392950D45F00B4F6CA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC5D382950D45F00B4F6CA /* LocationManager.swift */; };
+		68FC5D3D295111BD00B4F6CA /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC5D3C295111BD00B4F6CA /* MapAnnotationView.swift */; };
+		68FC5D3F29512B0B00B4F6CA /* PersistedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC5D3E29512B0B00B4F6CA /* PersistedCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68E9820229490BF700B5BBB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68E981E929490BF600B5BBB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68E981F029490BF600B5BBB6;
+			remoteInfo = AdyenAssignment;
+		};
+		68E9820C29490BF700B5BBB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68E981E929490BF600B5BBB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68E981F029490BF600B5BBB6;
+			remoteInfo = AdyenAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6822A9E0294A72890033B166 /* PlacesSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSearchViewModel.swift; sourceTree = "<group>"; };
+		6822A9E2294A83D90033B166 /* PlacesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMapView.swift; sourceTree = "<group>"; };
+		6822A9E4294A84C70033B166 /* PlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListView.swift; sourceTree = "<group>"; };
+		6822A9E6294A8AA00033B166 /* PlacesViewModePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModePickerView.swift; sourceTree = "<group>"; };
+		6822A9F0294BDAA30033B166 /* PlaceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewModel.swift; sourceTree = "<group>"; };
+		6822A9F2294BE3D10033B166 /* PlacePhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePhotosResponse.swift; sourceTree = "<group>"; };
+		6822A9F4294BF1640033B166 /* PlacesSortTypePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSortTypePickerView.swift; sourceTree = "<group>"; };
+		68E981F129490BF600B5BBB6 /* AdyenAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdyenAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E981F429490BF600B5BBB6 /* AdyenAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdyenAssignmentApp.swift; sourceTree = "<group>"; };
+		68E981F629490BF600B5BBB6 /* PlacesSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesSearchView.swift; sourceTree = "<group>"; };
+		68E981F829490BF700B5BBB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68E981FB29490BF700B5BBB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68E9820129490BF700B5BBB6 /* AdyenAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdyenAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E9820529490BF700B5BBB6 /* AdyenAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdyenAssignmentTests.swift; sourceTree = "<group>"; };
+		68E9820B29490BF700B5BBB6 /* AdyenAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdyenAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E9820F29490BF700B5BBB6 /* AdyenAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdyenAssignmentUITests.swift; sourceTree = "<group>"; };
+		68E9821129490BF700B5BBB6 /* AdyenAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdyenAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68E9821E29490C1300B5BBB6 /* PlaceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
+		68E9821F29490C1300B5BBB6 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		68E9822029490C1300B5BBB6 /* PlaceItemRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceItemRowView.swift; sourceTree = "<group>"; };
+		68E9822429490C2100B5BBB6 /* Example Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Example Data.swift"; sourceTree = "<group>"; };
+		68E9822729490CCF00B5BBB6 /* PlacesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesResponse.swift; sourceTree = "<group>"; };
+		68E982292949162700B5BBB6 /* PlacesDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataService.swift; sourceTree = "<group>"; };
+		68F7C007294CF6300074CAAC /* DistanceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceFormatter.swift; sourceTree = "<group>"; };
+		68F7C00A294FD9D10074CAAC /* PlacesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCoordinator.swift; sourceTree = "<group>"; };
+		68F7C00D2950A8AC0074CAAC /* PlacesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesScene.swift; sourceTree = "<group>"; };
+		68FC5D332950CA7400B4F6CA /* PlacesNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNetworkRepository.swift; sourceTree = "<group>"; };
+		68FC5D362950CFFC00B4F6CA /* MKCoordinateRegion+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Radius.swift"; sourceTree = "<group>"; };
+		68FC5D382950D45F00B4F6CA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		68FC5D3C295111BD00B4F6CA /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		68FC5D3E29512B0B00B4F6CA /* PersistedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistedCoordinator.swift; sourceTree = "<group>"; };
+		68FC5D4029514EFA00B4F6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68E981EE29490BF600B5BBB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E981FE29490BF700B5BBB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E9820829490BF700B5BBB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6822A9D5294A70420033B166 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9D6294A70480033B166 /* PlacesScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6822A9D6294A70480033B166 /* PlacesScene */ = {
+			isa = PBXGroup;
+			children = (
+				68F7C00F2950AA800074CAAC /* Navigation */,
+				68F7C00C2950A4F30074CAAC /* Presentation */,
+			);
+			path = PlacesScene;
+			sourceTree = "<group>";
+		};
+		6822A9D7294A705A0033B166 /* PlacesSearch */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9DF294A72550033B166 /* ViewModel */,
+				6822A9DD294A722F0033B166 /* Views */,
+			);
+			path = PlacesSearch;
+			sourceTree = "<group>";
+		};
+		6822A9D9294A71760033B166 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				68FC5D4029514EFA00B4F6CA /* Info.plist */,
+				68E981F429490BF600B5BBB6 /* AdyenAssignmentApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6822A9DA294A71A90033B166 /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9EF294BDAA30033B166 /* ViewModel */,
+				6822A9DE294A724E0033B166 /* Views */,
+			);
+			path = PlaceDetail;
+			sourceTree = "<group>";
+		};
+		6822A9DB294A71B60033B166 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				68E9822029490C1300B5BBB6 /* PlaceItemRowView.swift */,
+				6822A9E2294A83D90033B166 /* PlacesMapView.swift */,
+				6822A9E4294A84C70033B166 /* PlacesListView.swift */,
+				6822A9E6294A8AA00033B166 /* PlacesViewModePickerView.swift */,
+				6822A9F4294BF1640033B166 /* PlacesSortTypePickerView.swift */,
+				68FC5D3C295111BD00B4F6CA /* MapAnnotationView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		6822A9DC294A71FD0033B166 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68F7C004294CDAAC0074CAAC /* Network */,
+				68E9821F29490C1300B5BBB6 /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6822A9DD294A722F0033B166 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68E981F629490BF600B5BBB6 /* PlacesSearchView.swift */,
+				6822A9DB294A71B60033B166 /* SubViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6822A9DE294A724E0033B166 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68E9821E29490C1300B5BBB6 /* PlaceDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6822A9DF294A72550033B166 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9E0294A72890033B166 /* PlacesSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6822A9EF294BDAA30033B166 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9F0294BDAA30033B166 /* PlaceDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		68E981E829490BF600B5BBB6 = {
+			isa = PBXGroup;
+			children = (
+				68E981F329490BF600B5BBB6 /* AdyenAssignment */,
+				68E9820429490BF700B5BBB6 /* AdyenAssignmentTests */,
+				68E9820E29490BF700B5BBB6 /* AdyenAssignmentUITests */,
+				68E981F229490BF600B5BBB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68E981F229490BF600B5BBB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68E981F129490BF600B5BBB6 /* AdyenAssignment.app */,
+				68E9820129490BF700B5BBB6 /* AdyenAssignmentTests.xctest */,
+				68E9820B29490BF700B5BBB6 /* AdyenAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68E981F329490BF600B5BBB6 /* AdyenAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9D9294A71760033B166 /* App */,
+				68E9822629490C9C00B5BBB6 /* Data */,
+				6822A9DC294A71FD0033B166 /* Models */,
+				6822A9D5294A70420033B166 /* Scenes */,
+				68F7C006294CF6180074CAAC /* Utils */,
+				68E981F829490BF700B5BBB6 /* Assets.xcassets */,
+				68E981FA29490BF700B5BBB6 /* Preview Content */,
+			);
+			path = AdyenAssignment;
+			sourceTree = "<group>";
+		};
+		68E981FA29490BF700B5BBB6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68E9822429490C2100B5BBB6 /* Example Data.swift */,
+				68E981FB29490BF700B5BBB6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68E9820429490BF700B5BBB6 /* AdyenAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				68E9820529490BF700B5BBB6 /* AdyenAssignmentTests.swift */,
+			);
+			path = AdyenAssignmentTests;
+			sourceTree = "<group>";
+		};
+		68E9820E29490BF700B5BBB6 /* AdyenAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68E9820F29490BF700B5BBB6 /* AdyenAssignmentUITests.swift */,
+				68E9821129490BF700B5BBB6 /* AdyenAssignmentUITestsLaunchTests.swift */,
+			);
+			path = AdyenAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		68E9822629490C9C00B5BBB6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68FC5D322950C9EC00B4F6CA /* Repository */,
+				68F7C005294CDAC70074CAAC /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		68F7C004294CDAAC0074CAAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				68E9822729490CCF00B5BBB6 /* PlacesResponse.swift */,
+				6822A9F2294BE3D10033B166 /* PlacePhotosResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		68F7C005294CDAC70074CAAC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				68E982292949162700B5BBB6 /* PlacesDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		68F7C006294CF6180074CAAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68FC5D352950CFEF00B4F6CA /* Extensions */,
+				68F7C007294CF6300074CAAC /* DistanceFormatter.swift */,
+				68FC5D382950D45F00B4F6CA /* LocationManager.swift */,
+				68FC5D3E29512B0B00B4F6CA /* PersistedCoordinator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		68F7C009294FD9C40074CAAC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				68F7C00A294FD9D10074CAAC /* PlacesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		68F7C00C2950A4F30074CAAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6822A9D7294A705A0033B166 /* PlacesSearch */,
+				6822A9DA294A71A90033B166 /* PlaceDetail */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		68F7C00F2950AA800074CAAC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				68F7C00D2950A8AC0074CAAC /* PlacesScene.swift */,
+				68F7C009294FD9C40074CAAC /* Coordinator */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		68FC5D322950C9EC00B4F6CA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				68FC5D332950CA7400B4F6CA /* PlacesNetworkRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		68FC5D352950CFEF00B4F6CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68FC5D362950CFFC00B4F6CA /* MKCoordinateRegion+Radius.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68E981F029490BF600B5BBB6 /* AdyenAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E9821529490BF700B5BBB6 /* Build configuration list for PBXNativeTarget "AdyenAssignment" */;
+			buildPhases = (
+				68E981ED29490BF600B5BBB6 /* Sources */,
+				68E981EE29490BF600B5BBB6 /* Frameworks */,
+				68E981EF29490BF600B5BBB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdyenAssignment;
+			productName = AdyenAssignment;
+			productReference = 68E981F129490BF600B5BBB6 /* AdyenAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68E9820029490BF700B5BBB6 /* AdyenAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E9821829490BF700B5BBB6 /* Build configuration list for PBXNativeTarget "AdyenAssignmentTests" */;
+			buildPhases = (
+				68E981FD29490BF700B5BBB6 /* Sources */,
+				68E981FE29490BF700B5BBB6 /* Frameworks */,
+				68E981FF29490BF700B5BBB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68E9820329490BF700B5BBB6 /* PBXTargetDependency */,
+			);
+			name = AdyenAssignmentTests;
+			productName = AdyenAssignmentTests;
+			productReference = 68E9820129490BF700B5BBB6 /* AdyenAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68E9820A29490BF700B5BBB6 /* AdyenAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E9821B29490BF700B5BBB6 /* Build configuration list for PBXNativeTarget "AdyenAssignmentUITests" */;
+			buildPhases = (
+				68E9820729490BF700B5BBB6 /* Sources */,
+				68E9820829490BF700B5BBB6 /* Frameworks */,
+				68E9820929490BF700B5BBB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68E9820D29490BF700B5BBB6 /* PBXTargetDependency */,
+			);
+			name = AdyenAssignmentUITests;
+			productName = AdyenAssignmentUITests;
+			productReference = 68E9820B29490BF700B5BBB6 /* AdyenAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68E981E929490BF600B5BBB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					68E981F029490BF600B5BBB6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					68E9820029490BF700B5BBB6 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 68E981F029490BF600B5BBB6;
+					};
+					68E9820A29490BF700B5BBB6 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 68E981F029490BF600B5BBB6;
+					};
+				};
+			};
+			buildConfigurationList = 68E981EC29490BF600B5BBB6 /* Build configuration list for PBXProject "AdyenAssignment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68E981E829490BF600B5BBB6;
+			productRefGroup = 68E981F229490BF600B5BBB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68E981F029490BF600B5BBB6 /* AdyenAssignment */,
+				68E9820029490BF700B5BBB6 /* AdyenAssignmentTests */,
+				68E9820A29490BF700B5BBB6 /* AdyenAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68E981EF29490BF600B5BBB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E981FC29490BF700B5BBB6 /* Preview Assets.xcassets in Resources */,
+				68E981F929490BF700B5BBB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E981FF29490BF700B5BBB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E9820929490BF700B5BBB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68E981ED29490BF600B5BBB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FC5D3F29512B0B00B4F6CA /* PersistedCoordinator.swift in Sources */,
+				68FC5D3D295111BD00B4F6CA /* MapAnnotationView.swift in Sources */,
+				68F7C00E2950A8AC0074CAAC /* PlacesScene.swift in Sources */,
+				68E981F729490BF600B5BBB6 /* PlacesSearchView.swift in Sources */,
+				6822A9F1294BDB450033B166 /* PlaceDetailViewModel.swift in Sources */,
+				6822A9F3294BE3D10033B166 /* PlacePhotosResponse.swift in Sources */,
+				68E9822129490C1300B5BBB6 /* PlaceDetailView.swift in Sources */,
+				6822A9F5294BF1640033B166 /* PlacesSortTypePickerView.swift in Sources */,
+				68E981F529490BF600B5BBB6 /* AdyenAssignmentApp.swift in Sources */,
+				68FC5D372950CFFC00B4F6CA /* MKCoordinateRegion+Radius.swift in Sources */,
+				6822A9E7294A8AA00033B166 /* PlacesViewModePickerView.swift in Sources */,
+				68F7C008294CF6300074CAAC /* DistanceFormatter.swift in Sources */,
+				68E9822A2949162700B5BBB6 /* PlacesDataService.swift in Sources */,
+				68E9822529490C2100B5BBB6 /* Example Data.swift in Sources */,
+				68FC5D342950CA7400B4F6CA /* PlacesNetworkRepository.swift in Sources */,
+				68E9822229490C1300B5BBB6 /* Place.swift in Sources */,
+				6822A9E5294A84C70033B166 /* PlacesListView.swift in Sources */,
+				68E9822329490C1300B5BBB6 /* PlaceItemRowView.swift in Sources */,
+				68F7C00B294FD9D10074CAAC /* PlacesCoordinator.swift in Sources */,
+				68FC5D392950D45F00B4F6CA /* LocationManager.swift in Sources */,
+				6822A9E3294A83D90033B166 /* PlacesMapView.swift in Sources */,
+				6822A9E1294A72890033B166 /* PlacesSearchViewModel.swift in Sources */,
+				68E9822829490CCF00B5BBB6 /* PlacesResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E981FD29490BF700B5BBB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E9820629490BF700B5BBB6 /* AdyenAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E9820729490BF700B5BBB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E9821029490BF700B5BBB6 /* AdyenAssignmentUITests.swift in Sources */,
+				68E9821229490BF700B5BBB6 /* AdyenAssignmentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68E9820329490BF700B5BBB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68E981F029490BF600B5BBB6 /* AdyenAssignment */;
+			targetProxy = 68E9820229490BF700B5BBB6 /* PBXContainerItemProxy */;
+		};
+		68E9820D29490BF700B5BBB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68E981F029490BF600B5BBB6 /* AdyenAssignment */;
+			targetProxy = 68E9820C29490BF700B5BBB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68E9821329490BF700B5BBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68E9821429490BF700B5BBB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68E9821629490BF700B5BBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdyenAssignment/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdyenAssignment/App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carloandreaguilar.AdyenAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68E9821729490BF700B5BBB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AdyenAssignment/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdyenAssignment/App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carloandreaguilar.AdyenAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68E9821929490BF700B5BBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carloandreaguilar.AdyenAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdyenAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdyenAssignment";
+			};
+			name = Debug;
+		};
+		68E9821A29490BF700B5BBB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carloandreaguilar.AdyenAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdyenAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdyenAssignment";
+			};
+			name = Release;
+		};
+		68E9821C29490BF700B5BBB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carloandreaguilar.AdyenAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdyenAssignment;
+			};
+			name = Debug;
+		};
+		68E9821D29490BF700B5BBB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carloandreaguilar.AdyenAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AdyenAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68E981EC29490BF600B5BBB6 /* Build configuration list for PBXProject "AdyenAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E9821329490BF700B5BBB6 /* Debug */,
+				68E9821429490BF700B5BBB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E9821529490BF700B5BBB6 /* Build configuration list for PBXNativeTarget "AdyenAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E9821629490BF700B5BBB6 /* Debug */,
+				68E9821729490BF700B5BBB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E9821829490BF700B5BBB6 /* Build configuration list for PBXNativeTarget "AdyenAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E9821929490BF700B5BBB6 /* Debug */,
+				68E9821A29490BF700B5BBB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E9821B29490BF700B5BBB6 /* Build configuration list for PBXNativeTarget "AdyenAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E9821C29490BF700B5BBB6 /* Debug */,
+				68E9821D29490BF700B5BBB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68E981E929490BF600B5BBB6 /* Project object */;
+}
